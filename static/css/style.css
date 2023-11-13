@@ -4,7 +4,7 @@
     padding: 0;
 }
 
-/* Pange background */
+/* Page background */
 .background {
     background-color: black;
 }
@@ -17,12 +17,20 @@
 /* Form input */
 .input {
     background-color: rgba(18, 18, 18, 1);
+    color: rgba(255, 255, 255, 1);
     border-radius: 15px;
     border:2px solid rgba(48, 48, 48, 1);
     width: 100%;
 }
 
+/* Navbar list items */
 .list {
     list-style-type: none;
     margin: 0 1.1rem;
+}
+
+.mic {
+    border: 2px solid rgba(48, 48, 48, 1);
+    border-radius: 50px;
+    padding: 5px;
 }
