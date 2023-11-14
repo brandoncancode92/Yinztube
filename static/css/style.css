@@ -6,12 +6,18 @@
 
 /* Page background */
 .background {
-    background-color: black;
+    background-color: rgba(15, 15, 15, 1);
 }
 
 /* Icons */
 .icon {
     height: 30px;
+}
+
+/* Complete logo. Includes picture
+and text */
+.logo {
+    margin-left: 20px;
 }
 
 /* Form input */
@@ -23,14 +29,57 @@
     width: 100%;
 }
 
-/* Navbar list items */
-.list {
-    list-style-type: none;
-    margin: 0 1.1rem;
-}
-
+/* Microphone. */
 .mic {
     border: 2px solid rgba(48, 48, 48, 1);
     border-radius: 50px;
     padding: 5px;
+}
+
+/* Nav-links. */
+.navigation-links {
+    margin: 0px 12px;
+}
+
+/* Media query for the navbar mobile. */
+@media (max-width: 767px) {
+    .icon {
+        height: 10px;
+        margin: 0px 6px;
+    }
+
+    /* Complete logo. Pictute and
+    text. */
+    .logo {
+        margin-left: 3px;
+    }
+
+    /* Just the text part of
+    of the logo. */
+    .main-logo {
+        font-size: 10px;
+    }
+
+    /* Form input. */
+    .input {
+        background-color: rgba(18, 18, 18, 1);
+        font-size: 10px;
+        color: rgba(255, 255, 255, 1);
+        border-radius: 15px;
+        border:2px solid rgba(48, 48, 48, 1);
+        height: 20px;
+        width: 100%;
+    }
+
+    /* Microphone */
+    #mic {
+        border: 1px solid rgba(48, 48, 48, 1);
+    }
+}
+
+/* Sidebar-links */
+.side-bar-links {
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    font-size: 10px;
 }
