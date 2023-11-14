@@ -1,2 +1,2 @@
 # Yinztube
-My take on You tube. 
+A recreation of the front end of You-tube. 
