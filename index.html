@@ -21,7 +21,7 @@
             <nav class="d-flex justify-content-between">
                 <div class="d-flex justify-content-start align-items-center col-md-4 col-sm-3">
                     <!-- Hamburger bars -->
-                    <img class="icon mt-2" src="/Yinztube/static/img/burger-bars.png" alt="Hamburger bars">
+                    <img class="icon mt-2 burger" src="/Yinztube/static/img/burger-bars.png" alt="Hamburger bars">
                     <!-- Logo -->
                     <div class="logo d-flex mt-3">
                         <img class="icon mx-1" src="/Yinztube/static/img/play-logo.png" alt="Yinztube Logo">
@@ -57,31 +57,63 @@
         <!-- Main content -->
         <main>
             <!-- Main content container -->
-            <div class="d-flex mt-4">
+            <div class="d-flex mt-4 gap-2">
                 <!-- Side-bar -->
-                <div id="side-bar" class="d-flex justify-content-start flex-column">
-                    <a class="side-bar-links" href="#">
+                <div id="side-bar" class="d-flex justify-content-start flex-column gap-2">
+                    <!-- Side-bar default -->
+                    <a class="side-bar-link side-bar-default" href="#">
                         <div class="d-flex flex-column align-items-center">
                             <img class="icon" src="/Yinztube/static/img/home.png" alt="Home">
                             <p>Home</p>
                         </div>
                     </a>
-                    <a class="side-bar-links" href="#">
+                    <!-- Hidden side-bar -->
+                    <a class="side-bar-link side-bar-hidden" href="#">
+                        <div class="d-flex justify-content-around align-items-center">
+                            <img class="icon" src="/Yinztube/static/img/home.png" alt="Home">
+                            <p class="mt-3">Home</p>
+                        </div>
+                    </a>
+                    <!-- Side-bar default -->
+                    <a class="side-bar-link side-bar-default" href="#">
                         <div class="d-flex flex-column align-items-center">
                             <img class="icon" src="/Yinztube/static/img/shorts.png" alt="Shorts">
                             <p>Shorts</p>
                         </div>
                     </a>
-                    <a class="side-bar-links justify-content-center" href="#">
+                    <!-- Hidden sid-bar -->
+                    <a class="side-bar-link side-bar-hidden" href="#">
+                        <div class="d-flex justify-content-around align-items-center">
+                            <img class="icon" src="/Yinztube/static/img/shorts.png" alt="Shorts">
+                            <p class="mt-3">Shorts</p>
+                        </div>
+                    </a>
+                    <!-- Side-bar default -->
+                    <a class="side-bar-link side-bar-default justify-content-center" href="#">
                         <div class="d-flex flex-column align-items-center">
                             <img class="icon" src="/Yinztube/static/img/subscription.png" alt="Subscriptions">
                             <p>Subscriptions</p>
                         </div>
                     </a>
-                    <a class="side-bar-links" href="#">
+                    <!-- Hidden-sidebar -->
+                    <a class="side-bar-link justify-content-around side-bar-hidden" href="#">
+                        <div class="d-flex justify-content-between align-items-center mb-0">
+                            <img class="icon" src="/Yinztube/static/img/subscription.png" alt="Subscriptions">
+                            <p class="mt-3">Subs</p>
+                        </div>
+                    </a>
+                    <!-- Side-bar default -->
+                    <a class="side-bar-link side-bar-default" href="#">
                         <div class="d-flex flex-column align-items-center">
                             <img class="icon" src="/Yinztube/static/img/you.png" alt="You">
                             <p>You</p>
+                        </div>
+                    </a>
+                    <!-- Hidden side-bar -->
+                    <a class="side-bar-link side-bar-hidden" href="#">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <!-- <img class="icon" src="/Yinztube/static/img/you.png" alt="You"> -->
+                            <h6 class="mt-3">You ></h6>
                         </div>
                     </a>
                 </div>

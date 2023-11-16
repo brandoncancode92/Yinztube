@@ -14,6 +14,14 @@
     height: 30px;
 }
 
+/* Burger bars hover effect */
+.burger:hover {
+    padding: 5px;
+    border-radius: 15px;
+    background-color: rgba(39, 39, 39, 1);
+    transition: all 0.4s ease-in-out;
+}
+
 /* Complete logo. Includes picture
 and text */
 .logo {
@@ -78,10 +86,21 @@ and text */
 }
 
 /* Sidebar-links */
-.side-bar-links {
+.side-bar-link {
     color: rgba(255, 255, 255, 1);
     text-decoration: none;
     font-size: 10px;
+    transition: all 0.4s ease-in-out;
+}
+
+.side-bar-link:hover {
+    transform: scale(1.3);
+    color: rgba(255, 255, 255, 1);
+}
+
+/* Side-bar hidden content */
+.side-bar-hidden {
+    display: none;
 }
 
 /* Sub-navbar div */
@@ -127,7 +146,7 @@ and text */
     height: 20px;
     margin-bottom: 10px;
     margin-left: 10px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 /* Right arrow effects */
@@ -141,7 +160,7 @@ and text */
     height: 20px;
     margin-bottom: 10px;
     margin-right: 10px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 /* Left arrow effects */

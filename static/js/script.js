@@ -18,3 +18,22 @@ leftArrow.addEventListener('click', () => {
     rightArrow.style.display = 'block';
     subNavbar.scrollLeft -= 650;
 });
+
+// Hiding and restoring the hidden sidebar when the
+// hamburger bars are clicked
+const burgerIcon = document.querySelector('.burger');
+const sidebarDefaultClass = 'side-bar-default';
+const sidebarHiddenClass = 'side-bar-hidden';
+
+burgerIcon.addEventListener('click', () => {
+    const sideBarLinks = document.querySelectorAll('.side-bar-link');
+    for (const sideBarLink of sideBarLinks) {
+        if (sideBarLink.classList.contains(sidebarHiddenClass)) {
+            sideBarLink.classList.remove(sidebarHiddenClass);
+            sideBarLink.classList.add(sidebarDefaultClass);
+        } else {
+            sideBarLink.classList.remove(sidebarDefaultClass);
+            sideBarLink.classList.add(sidebarHiddenClass);
+        }
+    }
+});
