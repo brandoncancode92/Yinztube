@@ -11,7 +11,7 @@
 
 /* Icons */
 .icon {
-    height: 30px;
+    height: 25px;
 }
 
 /* Burger bars hover effect */
@@ -167,4 +167,20 @@ and text */
 .left-arrow:hover {
     transform: scale(1.3);
     position: relative;
+}
+
+.advertisement {
+    height: 350px;
+    width: 600px;
+    border-radius: 10px;
+}
+
+.advertisement-2 {
+    height: 175px;
+    width: 350px;
+    border-radius: 10px;
+}
+
+.cola {
+    height: 100px;
 }
