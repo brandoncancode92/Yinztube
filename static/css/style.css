@@ -169,18 +169,34 @@ and text */
     position: relative;
 }
 
+/* Larger Taylor Swift ad */
 .advertisement {
-    height: 350px;
-    width: 600px;
+    height: 300px;
+    width: 100%;
     border-radius: 10px;
 }
 
+/* Smaller Taylor Swift ad */
 .advertisement-2 {
     height: 175px;
-    width: 350px;
+    width: 100%;
     border-radius: 10px;
 }
 
+/* Coca-cola logo */
 .cola {
     height: 100px;
+    width: 100%;
+}
+
+/* Get tix link */
+.get-tix{
+    background-color: rgba(62, 166, 255, 1);
+    color: rgba(0, 0, 0, 1);
+    font-weight: 700;
+    text-decoration: none;
+    padding: 9px;
+    border-radius: 25px;
+    text-align: center;
+    width: 90px;
 }
