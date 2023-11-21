@@ -198,7 +198,14 @@ and text */
     padding: 9px;
     border-radius: 25px;
     text-align: center;
-    width: 90px;
+    width: 200px;
+}
+
+/* Head and shoulders logo */
+.h-s {
+    height: 100px;
+    width: 100%;
+    border-radius: 50%;
 }
 
 
