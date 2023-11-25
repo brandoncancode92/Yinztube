@@ -207,3 +207,7 @@ and text */
     width: 100%;
     border-radius: 50%;
 }
+
+#ads > div {
+    display: none; /* Initially hide all ads */
+}
