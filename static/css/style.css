@@ -208,6 +208,3 @@ and text */
     border-radius: 50%;
 }
 
-#ads > div {
-    display: none; /* Initially hide all ads */
-}

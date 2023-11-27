@@ -38,28 +38,3 @@ burgerIcon.addEventListener('click', () => {
     }
 });
 
-const ads = document.getElementById('ads').querySelectorAll('div');
-let currentAdIndex = 0;
-
-// Initially show the first ad
-ads[currentAdIndex].style.display = 'block';
-
-// Set up an interval to fade out and fade in ads every 5 seconds
-setInterval(() => {
-    // Fade out the current ad
-    ads[currentAdIndex].style.transition = 'opacity 0.5s ease-in-out';
-    ads[currentAdIndex].style.opacity = 0;
-
-    // Update the current ad index to the next one
-    currentAdIndex = (currentAdIndex + 1) % ads.length;
-
-    // Wait for the fade out to finish before fading in the next ad
-    setTimeout(() => {
-        // Set the display property of the next ad to block
-        ads[currentAdIndex].style.display = 'block'; // This line was missing
-
-        // Start the fade-in animation for the next ad
-        ads[currentAdIndex].style.transition = 'opacity 0.5s ease-in-out';
-        ads[currentAdIndex].style.opacity = 1;
-    }, 500);
-}, 5000);
