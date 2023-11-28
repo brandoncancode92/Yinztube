@@ -38,3 +38,12 @@ burgerIcon.addEventListener('click', () => {
     }
 });
 
+// Randomly Choose one of three ads to display on the page.
+const adIds = ['ad-1', 'ad-2', 'ad-3'];
+const randomAdId = adIds[Math.floor(Math.random() * adIds.length)];
+
+for (const adId of adIds) {
+    document.getElementById(adId).style.display = 'none';
+}
+
+document.getElementById(randomAdId).style.display = 'block';
