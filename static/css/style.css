@@ -8,3 +8,69 @@
 .background {
     background-color: rgba(15, 15, 15, 1);
 }
+
+/* Hamburger bars */
+#hamburger {
+    padding: 12px;
+    border-radius: 50%;
+}
+
+/* Hamburger bars effect */
+#hamburger:hover {
+    background-color: rgba(39, 39, 39, 1);
+}
+
+/* Main logo icon */
+.main-logo-icon {
+    height: 35px;
+}
+
+/* Navbar search form */
+.search-form {
+    height: 35px;
+    width: 100%;
+    padding: 15px;
+    background-color: rgba(19, 19, 19, 1);
+    border: 2px solid rgba(48, 48, 48, 1);
+    border-radius: 15px;
+}
+
+/* Microphone icon */
+#microphone {
+    height: 37px;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: rgba(39, 39, 39, 1);
+}
+
+/* Microphone icon effect */
+#microphone:hover {
+    background-color: rgba(48, 48, 48, 1);
+}
+
+/* Video camera effect */
+#video-camera:hover {
+    background-color: rgba(48, 48, 48, 1);
+}
+
+/* Navbar icons */
+.nav-icon {
+    height: 40px;
+    padding: 6px;
+    border-radius: 50%;
+}
+
+/* Notification bell */
+#notification-bell {
+    margin-left: 10px;
+}
+
+/* Notification bell hover */
+#notification-bell:hover {
+    background-color: rgba(48, 48, 48, 1);
+}
+
+/* User profile icon */
+#user-profile-icon {
+    margin-left: 10px;
+}
