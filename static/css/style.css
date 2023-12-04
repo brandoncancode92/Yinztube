@@ -11,6 +11,7 @@
 
 /* Hamburger bars */
 #hamburger {
+    width: 45px;
     padding: 12px;
     border-radius: 50%;
 }
@@ -48,6 +49,11 @@
     background-color: rgba(48, 48, 48, 1);
 }
 
+/* Magnifying glass link */
+#magnifying-glass-link {
+    display: none;
+}
+
 /* Video camera effect */
 #video-camera:hover {
     background-color: rgba(48, 48, 48, 1);
@@ -73,4 +79,23 @@
 /* User profile icon */
 #user-profile-icon {
     margin-left: 10px;
+}
+
+/* Navbar media query for mobile screens */
+@media (max-width: 768px) {
+    #hamburger {
+        display: none;
+    }
+    #microphone {
+        display: none;
+    }
+    #form-search input, #form-search button {
+        display: none;
+    }
+    #user-profile-icon {
+        display: none;
+    }
+    #magnifying-glass-link {
+        display: block;
+    }
 }
