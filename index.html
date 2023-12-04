@@ -14,11 +14,11 @@
     <title>Yinztube</title>
 </head>
 <body class="background">
-    <div class="container-fluid border border-warning">
+    <div class="container-fluid">
         <!-- Header -->
         <header>
             <!-- Navbar -->
-            <nav class="col-sm-12 col-md-12 col-lg-12 d-flex justify-content-between align-items-center">
+            <nav class="col-sm-12 col-md-12 col-lg-12 d-flex justify-content-between align-items-center border border-warning">
                 <div class="col-md-3 col-lg-3 d-flex justify-content-start">
                     <!-- Hamburger bars -->
                     <div id="hamburger">
@@ -54,7 +54,7 @@
                         <img id="user-profile-icon" class="nav-icon" src="/Yinztube/static/img/blank-profile.png" alt="User profile icon">
                     </a>
                     <a id="magnifying-glass-link" href="#">
-                        <img class="nav-icon" src="/Yinztube/static/img/magnifying-glass.png" alt="Magnifying glass">
+                        <img onclick="searchDiv()" class="nav-icon" src="/Yinztube/static/img/magnifying-glass.png" alt="Magnifying glass">
                     </a>
                 </div>
                 <!-- End of nav-links -->
@@ -69,6 +69,15 @@
 
             </article>
             <!-- End of Article -->
+            <div id="mobile-search" class="border border-danger">
+                <nav class="d-flex justify-content-around align-items-center col-sm-12">
+                    <img class="nav-icon border border-info" src="/Yinztube/static/img/back-arrow.png" alt="Back arrow">
+                    <form class="border border-warning" action="#" method="#">
+                        <input class="search-form" type="text" placeholder=" Search Yinztube">
+                    </form>
+                    <img id="mobile-search-microphone" class="nav-icon border border-info" src="/Yinztube/static/img/microphone.png" alt="Mobile search microphone">
+                </nav>
+            </div>
         </main>
         <!-- End of Main content -->
         <!-- Footer -->
