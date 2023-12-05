@@ -99,3 +99,9 @@
         display: block;
     }
 }
+
+/* Mobile search microphone */
+#mobile-search-microphone {
+    background-color: rgba(48, 48, 48, 1);
+}
+
