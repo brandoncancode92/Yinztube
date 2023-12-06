@@ -44,7 +44,7 @@
                     </div>
                     <!-- End of search form -->
                     <!-- Nav-links -->
-                    <div class="col-md-3 col-lg-3 d-flex justify-content-end align-items-center">
+                    <div id="nav-links" class="col-md-3 col-lg-3 d-flex justify-content-end align-items-center">
                         <a href="#">
                             <img id="video-camera" class="nav-icon" src="/Yinztube/static/img/video-camera.png" alt="Video camera">
                         </a>
@@ -73,8 +73,8 @@
             <!-- End of Article -->
             <div id="mobile-search-navbar">
                 <nav class="d-flex justify-content-around align-items-center col-sm-12">
-                    <img class="nav-icon" src="/Yinztube/static/img/back-arrow.png" alt="Back arrow">
-                    <form action="#" method="#">
+                    <img onclick="toggleNavbars()" id="mobile-search-back-arrow" class="nav-icon" src="/Yinztube/static/img/back-arrow.png" alt="Back arrow">
+                    <form id="search-form" action="#" method="#">
                         <input class="search-form" type="text" placeholder=" Search Yinztube">
                     </form>
                     <img id="mobile-search-microphone" class="nav-icon" src="/Yinztube/static/img/microphone.png" alt="Mobile search microphone">
