@@ -1,4 +1,4 @@
-// Fucntion for displaying the mobile search navbar when the magnifying
+// Function for displaying the mobile search navbar when the magnifying
 // glass is clicked.
 function searchDiv() {
     // Hide the main navbar
