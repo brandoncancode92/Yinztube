@@ -112,12 +112,24 @@
     background-color: rgba(48, 48, 48, 1);
 }
 
+/* Mobile form input box */
 #search-form {
     height: 40px;
     width: 100%;
 }
 
+/* Mobile search back icon */
 #mobile-search-back-arrow {
     height: 40px;
 }
 
+/* Column navbar icon */
+.column-navbar-icon {
+    height: 40px;
+    padding: 6px;
+}
+
+/* Column navbar link */
+.column-navbar-link {
+    text-decoration: none;
+}
