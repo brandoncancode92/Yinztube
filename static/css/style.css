@@ -129,6 +129,13 @@
     padding: 6px;
 }
 
+/* Column navbar channel icon */
+.column-navbar-channel-icon {
+    height: 40px;
+    padding: 6px;
+    border-radius: 50%;
+}
+
 /* Column navbar text */
 .column-navbar-text {
     font-size: 13px;
