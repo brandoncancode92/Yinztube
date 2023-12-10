@@ -129,6 +129,18 @@
     padding: 6px;
 }
 
+/* Column navbar Home default backgorund */
+.home-bg {
+    background-color: rgba(39, 39, 39, 1);
+    border-radius: 10px;
+}
+
+/* Column navbar link hover effect */
+.column-navbar-link:hover {
+    background-color: rgba(48, 48, 48, 1);
+    border-radius: 10px;
+}
+
 /* Column navbar channel icon */
 .column-navbar-channel-icon {
     height: 40px;
@@ -140,6 +152,7 @@
 .column-navbar-text {
     font-size: 13px;
     color: white;
+    overflow: hidden;
 }
 
 /* Column navbar link */
@@ -147,7 +160,12 @@
     text-decoration: none;
 }
 
+/* Column navbar hr */
 hr {
     width: 100%;
     border-color: rgba(48, 48, 48, 1);
+}
+
+.right-space {
+    margin-right: 18px;
 }

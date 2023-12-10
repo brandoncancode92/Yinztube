@@ -41,3 +41,34 @@ function toggleNavbars() {
         document.getElementById('mobile-search-navbar').style.display = 'none';
     }
 }
+
+const subShowMore = document.getElementById('sub-show-more-div');
+const subShowLess = document.getElementById('sub-show-less-div');
+const subShowMoreElements = document.querySelectorAll('.sub-show-more');
+const dividerElement = document.querySelector('.divider'); // Replace with the selector for your divider element
+
+// Define function to toggle visibility
+function toggleVisibility(isVisible) {
+    if (isVisible) {
+    subShowMore.style.display = 'none'; // Hide sub-show-more-div on show
+    subShowMoreElements.forEach(element => element.style.display = 'block');
+    dividerElement.style.display = 'none'; // Hide divider on show
+    } else {
+    subShowMore.style.display = 'flex'; // Show sub-show-more-div on hide
+    subShowMoreElements.forEach(element => element.style.display = 'none');
+    dividerElement.style.display = 'block'; // Show divider on hide
+    }
+}
+
+// Hide sub-show-more elements, show divider, and hide sub-show-more-div initially
+toggleVisibility(false);
+
+subShowMore.addEventListener('click', () => {
+  // Show sub-show-more elements and hide divider, but also hide sub-show-more-div on click
+    toggleVisibility(true);
+});
+
+subShowLess.addEventListener('click', () => {
+  // Hide sub-show-more elements and show divider, but also show sub-show-more-div on click
+    toggleVisibility(false);
+});
