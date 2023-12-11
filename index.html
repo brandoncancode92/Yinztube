@@ -75,7 +75,8 @@
         <!-- End of header -->
         <!-- Main content -->
         <main>
-            <div class="d-flex mt-2 col-lg-12 col-md-12">
+            <div class="d-flex mt-3 col-lg-12 col-md-12">
+                <!-- Column navbar -->
                 <div id="column-navbar" class="d-flex flex-column col-md-1 col-lg-1 align-items-center">
                     <a class="home-bg column-navbar-link  column-navbar-link col-md-12 col-lg-12 mb-1" href="#">
                         <div class="d-flex align-items-center">
@@ -110,11 +111,8 @@
                     <hr class="border border-white">
                     <a class="column-navbar-link col-md-12 col-lg-12 mb-1" href="#">
                         <div class="d-flex align-items-center">
-                            <div class="col-md-4 col-lg-4">
-                                <p class="column-navbar-text my-1 mx-1">You</p>
-                            </div>
-                            <div class="col-md-8 col-lg-8">
-                                <img class="column-navbar-icon" src="/Yinztube/static/img/white-right-arrow.png" alt="Home icon">
+                            <div class="col-md-12 col-lg-12">
+                                <p class="you-text column-navbar-text my-1 mx-1"><strong>You ></strong></p>
                             </div>
                         </div>
                     </a>
@@ -168,7 +166,7 @@
                             </div>
                         </div>
                     </a>
-                    <a class="column-navbar-link col-md-12 col-lg-12 mb-1" href="#">
+                    <div id="you-show-more-div" class="column-navbar-link col-md-12 col-lg-12 mb-1" href="#">
                         <div class="d-flex align-items-center">
                             <div class="col-md-4 col-lg-4">
                                 <img class="column-navbar-icon" src="/Yinztube/static/img/white-down-arrow.png" alt="Home icon">
@@ -177,9 +175,8 @@
                                 <p class="my-1 column-navbar-text">Show more</p>
                             </div>
                         </div>
-                    </a>
-                    <hr class="border border-white">
-                    <a class="column-navbar-link col-md-12 col-lg-12 mb-1" href="#">
+                    </div>
+                    <a class="column-navbar-link col-md-12 col-lg-12 mb-1 you-show-more" href="#">
                         <div class="d-flex align-items-center">
                             <div class="col-md-4 col-lg-4">
                                 <img class="column-navbar-icon" src="/Yinztube/static/img/liked-videos.png" alt="Home icon">
@@ -189,27 +186,27 @@
                             </div>
                         </div>
                     </a>
-                    <a class="column-navbar-link col-md-12 col-lg-12 mb-1" href="#">
+                    <a class="column-navbar-link col-md-12 col-lg-12 mb-1 you-show-more" href="#">
                         <div class="d-flex align-items-center">
                             <div class="col-md-4 col-lg-4">
-                                <img class="column-navbar-icon" src="/Yinztube/static/img/home.png" alt="Home icon">
+                                <img class="column-navbar-icon" src="/Yinztube/static/img/coding-icon.png" alt="Home icon">
                             </div>
                             <div class="col-md-8 col-lg-8">
                                 <p class="my-1 column-navbar-text">Coding videos</p>
                             </div>
                         </div>
                     </a>
-                    <a class="column-navbar-link col-md-12 col-lg-12 mb-1" href="#">
+                    <a class="column-navbar-link col-md-12 col-lg-12 mb-1 you-show-more" href="#">
                         <div class="d-flex align-items-center">
                             <div class="col-md-4 col-lg-4">
-                                <img class="column-navbar-icon" src="/Yinztube/static/img/home.png" alt="Home icon">
+                                <img class="column-navbar-icon" src="/Yinztube/static/img/watch-sometime.png" alt="Watch later icon">
                             </div>
                             <div class="col-md-8 col-lg-8">
                                 <p class="my-1 column-navbar-text">watch later</p>
                             </div>
                         </div>
                     </a>
-                    <a class="column-navbar-link col-md-12 col-lg-12 mb-1" href="#">
+                    <a class="column-navbar-link col-md-12 col-lg-12 mb-1 you-show-more">
                         <div class="d-flex align-items-center">
                             <div class="col-md-4 col-lg-4">
                                 <img class="column-navbar-icon" src="/Yinztube/static/img/mix.png" alt="Home icon">
@@ -219,7 +216,7 @@
                             </div>
                         </div>
                     </a>
-                    <a class="column-navbar-link col-md-12 col-lg-12" href="#">
+                    <div id="you-show-less-div" class="column-navbar-link col-md-12 col-lg-12">
                         <div class="d-flex align-items-center">
                             <div class="col-md-4 col-lg-4">
                                 <img class="column-navbar-icon" src="/Yinztube/static/img/white-up-arrow.png" alt="Home icon">
@@ -228,9 +225,9 @@
                                 <p class="my-1 column-navbar-text">Show less</p>
                             </div>
                         </div>
-                    </a>
+                    </div>
                     <hr class="border border-white">
-                    <h6 class="text-white">Subscriptions</h6>
+                    <h6 id="column-navbar-subscriptions-text" class="text-white"><strong>Subscriptions</strong></h6>
                     <a class="column-navbar-link col-md-12 col-lg-12 mb-1" href="#">
                         <div class="d-flex align-items-center">
                             <div class="col-md-4 col-lg-4">
@@ -247,7 +244,7 @@
                                 <img class="column-navbar-channel-icon" src="/Yinztube/static/img/catrp.png" alt="CATRP logo">
                             </div>
                             <div class="col-md-8 col-lg-8">
-                                <p class="my-1 column-navbar-text">Chase after the right price</p>
+                                <p class="my-1 column-navbar-text">Chase After The Right Price</p>
                             </div>
                         </div>
                     </a>
@@ -307,7 +304,7 @@
                                 <img class="column-navbar-channel-icon" src="/Yinztube/static/img/white-down-arrow.png" alt="Down arrow">
                             </div>
                             <div class="col-md-8 col-lg-8">
-                                <p class="my-1 column-navbar-text">Show more</p>
+                                <p class="my-1 column-navbar-text">Show 4 more</p>
                             </div>
                         </div>
                     </div>
@@ -352,8 +349,8 @@
                             </div>
                         </div>
                     </a>
-                    <div class="column-navbar-link col-md-12 col-lg-12 sub-show-more">
-                        <div id="sub-show-less-div" class="d-flex align-items-center">
+                    <div id="sub-show-less-div" class="column-navbar-link col-md-12 col-lg-12 sub-show-more">
+                        <div class="d-flex align-items-center">
                             <div class="col-md-4 col-lg-4">
                                 <img class="column-navbar-channel-icon" src="/Yinztube/static/img/white-up-arrow.png" alt="Up arrow">
                             </div>
@@ -363,11 +360,11 @@
                         </div>
                     </div>
                     <hr class="border border-white sub-show-more">
-                    <h6 class="text-white justify-content-start">Explore</h6>
+                    <h6 id="column-navbar-explore-text" class="text-white"><strong>Explore</strong></h6>
                     <a class="column-navbar-link col-md-12 col-lg-12 mb-1" href="#">
                         <div class="d-flex align-items-center">
                             <div class="col-md-4 col-lg-4">
-                                <img class="column-navbar-icon" src="/Yinztube/static/img/home.png" alt="Channel logo">
+                                <img class="column-navbar-icon" src="/Yinztube/static/img/trending-icon.png" alt="Trending icon">
                             </div>
                             <div class="col-md-8 col-lg-8">
                                 <p class="my-1 column-navbar-text">Trending</p>
@@ -377,7 +374,7 @@
                     <a class="column-navbar-link col-md-12 col-lg-12 mb-1" href="#">
                         <div class="d-flex align-items-center">
                             <div class="col-md-4 col-lg-4">
-                                <img class="column-navbar-icon" src="/Yinztube/static/img/home.png" alt="Channel logo">
+                                <img class="column-navbar-icon" src="/Yinztube/static/img/shopping-icon.png" alt="Shopping icon">
                             </div>
                             <div class="col-md-8 col-lg-8">
                                 <p class="my-1 column-navbar-text">Shopping</p>
@@ -387,7 +384,7 @@
                     <a class="column-navbar-link col-md-12 col-lg-12 mb-1" href="#">
                         <div class="d-flex align-items-center">
                             <div class="col-md-4 col-lg-4">
-                                <img class="column-navbar-icon" src="/Yinztube/static/img/home.png" alt="Channel logo">
+                                <img class="column-navbar-icon" src="/Yinztube/static/img/music-icon.png" alt="Music icon">
                             </div>
                             <div class="col-md-8 col-lg-8">
                                 <p class="my-1 column-navbar-text">Music</p>
@@ -397,7 +394,7 @@
                     <a class="column-navbar-link col-md-12 col-lg-12 mb-1" href="#">
                         <div class="d-flex align-items-center">
                             <div class="col-md-4 col-lg-4">
-                                <img class="column-navbar-icon" src="/Yinztube/static/img/home.png" alt="Channel logo">
+                                <img class="column-navbar-icon" src="/Yinztube/static/img/movies-and-tv-icon.png" alt="Movies/Tv icon">
                             </div>
                             <div class="col-md-8 col-lg-8">
                                 <p class="my-1 column-navbar-text">Movies & TV</p>
@@ -407,7 +404,7 @@
                     <a class="column-navbar-link col-md-12 col-lg-12 mb-1" href="#">
                         <div class="d-flex align-items-center">
                             <div class="col-md-4 col-lg-4">
-                                <img class="column-navbar-icon" src="/Yinztube/static/img/home.png" alt="Channel logo">
+                                <img class="column-navbar-icon" src="/Yinztube/static/img/live-radio-waves.png" alt="Radio waves icon">
                             </div>
                             <div class="col-md-8 col-lg-8">
                                 <p class="my-1 column-navbar-text">Live</p>
@@ -417,7 +414,7 @@
                     <a class="column-navbar-link col-md-12 col-lg-12 mb-1" href="#">
                         <div class="d-flex align-items-center">
                             <div class="col-md-4 col-lg-4">
-                                <img class="column-navbar-icon" src="/Yinztube/static/img/home.png" alt="Channel logo">
+                                <img class="column-navbar-icon" src="/Yinztube/static/img/game-controller.png" alt="Game controller icon">
                             </div>
                             <div class="col-md-8 col-lg-8">
                                 <p class="my-1 column-navbar-text">Gaming</p>
@@ -427,7 +424,7 @@
                     <a class="column-navbar-link col-md-12 col-lg-12 mb-1" href="#">
                         <div class="d-flex align-items-center">
                             <div class="col-md-4 col-lg-4">
-                                <img class="column-navbar-icon" src="/Yinztube/static/img/home.png" alt="Channel logo">
+                                <img class="column-navbar-icon" src="/Yinztube/static/img/news.png" alt="News icon">
                             </div>
                             <div class="col-md-8 col-lg-8">
                                 <p class="my-1 column-navbar-text">News</p>
@@ -437,7 +434,7 @@
                     <a class="column-navbar-link col-md-12 col-lg-12 mb-1" href="#">
                         <div class="d-flex align-items-center">
                             <div class="col-md-4 col-lg-4">
-                                <img class="column-navbar-icon" src="/Yinztube/static/img/home.png" alt="Channel logo">
+                                <img class="column-navbar-icon" src="/Yinztube/static/img/sports.png" alt="Sports icon">
                             </div>
                             <div class="col-md-8 col-lg-8">
                                 <p class="my-1 column-navbar-text">Sports</p>
@@ -447,7 +444,7 @@
                     <a class="column-navbar-link col-md-12 col-lg-12 mb-1" href="#">
                         <div class="d-flex align-items-center">
                             <div class="col-md-4 col-lg-4">
-                                <img class="column-navbar-icon" src="/Yinztube/static/img/home.png" alt="Channel logo">
+                                <img class="column-navbar-icon" src="/Yinztube/static/img/light-bulb.png" alt="Light bulb icon">
                             </div>
                             <div class="col-md-8 col-lg-8">
                                 <p class="my-1 column-navbar-text">Learning</p>
@@ -457,7 +454,7 @@
                     <a class="column-navbar-link col-md-12 col-lg-12 mb-1" href="#">
                         <div class="d-flex align-items-center">
                             <div class="col-md-4 col-lg-4">
-                                <img class="column-navbar-icon" src="/Yinztube/static/img/home.png" alt="Channel logo">
+                                <img class="column-navbar-icon" src="/Yinztube/static/img/fashion.png" alt="Fashion icon">
                             </div>
                             <div class="col-md-8 col-lg-8">
                                 <p class="my-1 column-navbar-text">Fashion & Beauty</p>
@@ -467,7 +464,7 @@
                     <a class="column-navbar-link col-md-12 col-lg-12 mb-1" href="#">
                         <div class="d-flex align-items-center">
                             <div class="col-md-4 col-lg-4">
-                                <img class="column-navbar-icon" src="/Yinztube/static/img/home.png" alt="Channel logo">
+                                <img class="column-navbar-icon" src="/Yinztube/static/img/podcast.png" alt="Podcast icon">
                             </div>
                             <div class="col-md-8 col-lg-8">
                                 <p class="my-1 column-navbar-text">Podcasts</p>
@@ -475,11 +472,11 @@
                         </div>
                     </a>
                     <hr class="border border-white">
-                    <h6 class="right-space text-white text-start">More from Yinztube</h6>
+                    <h6 id="column-navbar-more-from-yinztube-text" class="text-white text-start"><strong>More from Yinztube</strong></h6>
                     <a class="column-navbar-link col-md-12 col-lg-12 mb-1" href="#">
                         <div class="d-flex align-items-center">
                             <div class="col-md-4 col-lg-4">
-                                <img class="column-navbar-icon" src="/Yinztube/static/img/home.png" alt="Channel logo">
+                                <img class="column-navbar-icon" src="/Yinztube/static/img/play-logo.png" alt="Main logo">
                             </div>
                             <div class="col-md-8 col-lg-8">
                                 <p class="my-1 column-navbar-text">Yinztube Premium</p>
@@ -489,7 +486,7 @@
                     <a class="column-navbar-link col-md-12 col-lg-12 mb-1" href="#">
                         <div class="d-flex align-items-center">
                             <div class="col-md-4 col-lg-4">
-                                <img class="column-navbar-icon" src="/Yinztube/static/img/home.png" alt="Channel logo">
+                                <img class="column-navbar-icon" src="/Yinztube/static/img/play-logo.png" alt="Main logo">
                             </div>
                             <div class="col-md-8 col-lg-8">
                                 <p class="my-1 column-navbar-text">Yinztube Studio</p>
@@ -499,7 +496,7 @@
                     <a class="column-navbar-link col-md-12 col-lg-12 mb-1" href="#">
                         <div class="d-flex align-items-center">
                             <div class="col-md-4 col-lg-4">
-                                <img class="column-navbar-icon" src="/Yinztube/static/img/home.png" alt="Channel logo">
+                                <img class="column-navbar-icon" src="/Yinztube/static/img/play-logo.png" alt="Main logo">
                             </div>
                             <div class="col-md-8 col-lg-8">
                                 <p class="my-1 column-navbar-text">Yinztube TV</p>
@@ -509,7 +506,7 @@
                     <a class="column-navbar-link col-md-12 col-lg-12 mb-1" href="#">
                         <div class="d-flex align-items-center">
                             <div class="col-md-4 col-lg-4">
-                                <img class="column-navbar-icon" src="/Yinztube/static/img/home.png" alt="Channel logo">
+                                <img class="column-navbar-icon" src="/Yinztube/static/img/play-logo.png" alt="Main logo">
                             </div>
                             <div class="col-md-8 col-lg-8">
                                 <p class="my-1 column-navbar-text">Yinztube Music</p>
@@ -519,7 +516,7 @@
                     <a class="column-navbar-link col-md-12 col-lg-12 mb-1" href="#">
                         <div class="d-flex align-items-center">
                             <div class="col-md-4 col-lg-4">
-                                <img class="column-navbar-icon" src="/Yinztube/static/img/home.png" alt="Channel logo">
+                                <img class="column-navbar-icon" src="/Yinztube/static/img/play-logo.png" alt="Main logo">
                             </div>
                             <div class="col-md-8 col-lg-8">
                                 <p class="my-1 column-navbar-text">Yinztube Kids</p>
@@ -530,7 +527,7 @@
                     <a class="column-navbar-link col-md-12 col-lg-12 mb-1" href="#">
                         <div class="d-flex align-items-center">
                             <div class="col-md-4 col-lg-4">
-                                <img class="column-navbar-icon" src="/Yinztube/static/img/home.png" alt="Channel logo">
+                                <img class="column-navbar-icon" src="/Yinztube/static/img/settings.png" alt="Settings icon">
                             </div>
                             <div class="col-md-8 col-lg-8">
                                 <p class="my-1 column-navbar-text">Settings</p>
@@ -540,7 +537,7 @@
                     <a class="column-navbar-link col-md-12 col-lg-12 mb-1" href="#">
                         <div class="d-flex align-items-center">
                             <div class="col-md-4 col-lg-4">
-                                <img class="column-navbar-icon" src="/Yinztube/static/img/home.png" alt="Channel logo">
+                                <img class="column-navbar-icon" src="/Yinztube/static/img/flag.png" alt="Flag icon">
                             </div>
                             <div class="col-md-8 col-lg-8">
                                 <p class="my-1 column-navbar-text">Report history</p>
@@ -550,7 +547,7 @@
                     <a class="column-navbar-link col-md-12 col-lg-12 mb-1" href="#">
                         <div class="d-flex align-items-center">
                             <div class="col-md-4 col-lg-4">
-                                <img class="column-navbar-icon" src="/Yinztube/static/img/home.png" alt="Channel logo">
+                                <img class="column-navbar-icon" src="/Yinztube/static/img/help.png" alt="Help icon">
                             </div>
                             <div class="col-md-8 col-lg-8">
                                 <p class="my-1 column-navbar-text">Help</p>
@@ -560,7 +557,7 @@
                     <a class="column-navbar-link col-md-12 col-lg-12 mb-1" href="#">
                         <div class="d-flex align-items-center">
                             <div class="col-md-4 col-lg-4">
-                                <img class="column-navbar-icon" src="/Yinztube/static/img/home.png" alt="Channel logo">
+                                <img class="column-navbar-icon" src="/Yinztube/static/img/feedback.png" alt="Feedback icon">
                             </div>
                             <div class="col-md-8 col-lg-8">
                                 <p class="my-1 column-navbar-text">Send feedback</p>
@@ -568,11 +565,12 @@
                         </div>
                     </a>
                     <hr class="border border-white">
-                    <p>©2023 Yinztube LLC</p>
+                    <p class="copyright">©2023 Yinztube LLC</p>
                 </div>
+                <!-- End of column navbar -->
                 <div class="d-flex flex-column align-items-center">
                     <div id="sub-navbar">
-
+                        
                     </div>
                     <!-- Article -->
                     <article>

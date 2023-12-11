@@ -123,6 +123,34 @@
     height: 40px;
 }
 
+/* Column navbar */
+#column-navbar {
+    height: 1250px;
+    overflow-y: scroll;
+}
+
+/* Column navbar track */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Column navbar track */
+::-webkit-scrollbar-track {
+    background-color: rgba(15, 15, 15, 1);
+}
+
+/* Column navbar thumb */
+::-webkit-scrollbar-thumb {
+    background-color: rgba(113, 113, 113, 1);
+    border-radius: 10px;
+    visibility: hidden;
+}
+
+/* Column navbar hover effect to show scrollbar thumb */
+#column-navbar:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
+
 /* Column navbar icon */
 .column-navbar-icon {
     height: 35px;
@@ -152,6 +180,8 @@
 .column-navbar-text {
     font-size: 13px;
     color: white;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     overflow: hidden;
 }
 
@@ -160,12 +190,25 @@
     text-decoration: none;
 }
 
+
 /* Column navbar hr */
 hr {
     width: 100%;
     border-color: rgba(48, 48, 48, 1);
 }
 
-.right-space {
-    margin-right: 18px;
+/* Column navbar You > sub-header */
+.you-text {
+    font-size: 18px;
+}
+
+/* Column navbar sub-header text spacing */
+#column-navbar-more-from-yinztube-text,
+#column-navbar-explore-text,
+#column-navbar-subscriptions-text {
+    margin-right: auto;
+}
+
+.copyright {
+    color: rgb(137, 137, 137);
 }

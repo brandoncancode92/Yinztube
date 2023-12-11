@@ -42,33 +42,50 @@ function toggleNavbars() {
     }
 }
 
-const subShowMore = document.getElementById('sub-show-more-div');
-const subShowLess = document.getElementById('sub-show-less-div');
-const subShowMoreElements = document.querySelectorAll('.sub-show-more');
-const dividerElement = document.querySelector('.divider'); // Replace with the selector for your divider element
+// Show and hide the extra links in the column navbar
+const showMoreDivs = {
+    'sub-show-more': {
+        divElement: document.getElementById('sub-show-more-div'),
+        showLessElement: document.getElementById('sub-show-less-div'),
+        elementsToToggle: document.querySelectorAll('.sub-show-more'),
+    },
+    'you-show-more': {
+        divElement: document.getElementById('you-show-more-div'),
+        showLessElement: document.getElementById('you-show-less-div'),
+        elementsToToggle: document.querySelectorAll('.you-show-more'),
+    },
+};
 
-// Define function to toggle visibility
-function toggleVisibility(isVisible) {
+const dividerElement = document.querySelector('.divider');
+
+function toggleVisibility(sectionId, isVisible) {
+    const { divElement, showLessElement, elementsToToggle } = showMoreDivs[sectionId];
+
     if (isVisible) {
-    subShowMore.style.display = 'none'; // Hide sub-show-more-div on show
-    subShowMoreElements.forEach(element => element.style.display = 'block');
-    dividerElement.style.display = 'none'; // Hide divider on show
+        divElement.style.display = 'none';
+        elementsToToggle.forEach(element => element.style.display = 'block');
+        dividerElement.style.display = 'none';
     } else {
-    subShowMore.style.display = 'flex'; // Show sub-show-more-div on hide
-    subShowMoreElements.forEach(element => element.style.display = 'none');
-    dividerElement.style.display = 'block'; // Show divider on hide
+        divElement.style.display = 'flex';
+        elementsToToggle.forEach(element => element.style.display = 'none');
+        dividerElement.style.display = 'block';
     }
+
+    showLessElement.style.display = isVisible ? 'block' : 'none';
 }
 
-// Hide sub-show-more elements, show divider, and hide sub-show-more-div initially
-toggleVisibility(false);
+// Initial state
+for (const sectionId in showMoreDivs) {
+    toggleVisibility(sectionId, false);
+}
 
-subShowMore.addEventListener('click', () => {
-  // Show sub-show-more elements and hide divider, but also hide sub-show-more-div on click
-    toggleVisibility(true);
-});
+// Click events
+for (const sectionId in showMoreDivs) {
+    showMoreDivs[sectionId].divElement.addEventListener('click', () => {
+        toggleVisibility(sectionId, true);
+    });
 
-subShowLess.addEventListener('click', () => {
-  // Hide sub-show-more elements and show divider, but also show sub-show-more-div on click
-    toggleVisibility(false);
-});
+    showMoreDivs[sectionId].showLessElement.addEventListener('click', () => {
+        toggleVisibility(sectionId, false);
+    });
+}
