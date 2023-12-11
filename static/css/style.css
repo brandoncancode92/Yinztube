@@ -26,6 +26,12 @@
     height: 35px;
 }
 
+/* Column navbar Home default backgorund */
+.home-bg {
+    background-color: rgba(39, 39, 39, 1);
+    border-radius: 10px;
+}
+
 /* Navbar search form */
 .search-form {
     height: 35px;
@@ -99,6 +105,9 @@
     #magnifying-glass-link {
         display: block;
     }
+    div #column-navbar {
+    display: none;
+    }
 }
 
 /* Mobile search navbar */
@@ -122,6 +131,9 @@
 #mobile-search-back-arrow {
     height: 40px;
 }
+
+
+
 
 /* Column navbar */
 #column-navbar {
@@ -157,18 +169,6 @@
     padding: 6px;
 }
 
-/* Column navbar Home default backgorund */
-.home-bg {
-    background-color: rgba(39, 39, 39, 1);
-    border-radius: 10px;
-}
-
-/* Column navbar link hover effect */
-.column-navbar-link:hover {
-    background-color: rgba(48, 48, 48, 1);
-    border-radius: 10px;
-}
-
 /* Column navbar channel icon */
 .column-navbar-channel-icon {
     height: 40px;
@@ -186,10 +186,15 @@
 }
 
 /* Column navbar link */
-.column-navbar-link {
+.link {
     text-decoration: none;
 }
 
+/* Column navbar link hover effect */
+.column-navbar-link:hover {
+    background-color: rgba(48, 48, 48, 1);
+    border-radius: 10px;
+}
 
 /* Column navbar hr */
 hr {
@@ -209,6 +214,17 @@ hr {
     margin-right: auto;
 }
 
+/* (fake) Copy right text */
 .copyright {
     color: rgb(137, 137, 137);
 }
+/* End of column navbar */
+
+
+/* Mobile footer */
+
+.mobile-footer-icon {
+    height: 35px;
+}
+
+/* End of mobile footer */
