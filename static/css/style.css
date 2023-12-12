@@ -223,8 +223,44 @@ hr {
 
 /* Mobile footer */
 
+@media only screen and (max-width: 768px) {
+    #mobile-footer {
+      display: block; /* Show the element on mobile screens */
+      position: fixed; /* Fix the element to the bottom of the screen */
+      left: 0; /* Position the element at the left edge of the screen */
+      bottom: 0; /* Position the element at the bottom edge of the screen */
+      width: 100%; /* Make the element occupy the full width of the screen */
+      text-align: center; /* Center the text content horizontally */
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    #mobile-footer {
+      display: none; /* Hide the element on larger screens */
+    }
+}
+
+.mobile-footer-link {
+    text-decoration: none;
+}
+
 .mobile-footer-icon {
-    height: 35px;
+    height: 30px;
+    padding: 6px;
+}
+
+#mobile-footer-add-icon {
+    height: 40px;
+    margin-top: 5px;
+}
+
+.mobile-footer-text {
+    font-size: 12px;
+    color: white;
+}
+
+.mobile-footer-border-top {
+    border-top: 2px solid rgba(48, 48, 48, 1);
 }
 
 /* End of mobile footer */
