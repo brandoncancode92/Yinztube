@@ -99,6 +99,9 @@
     #form-search input, #form-search button {
         display: none;
     }
+    #video-camera {
+        display: none;
+    }
     #user-profile-icon {
         display: none;
     }
@@ -117,19 +120,13 @@
 
 /* Mobile search microphone */
 #mobile-search-microphone {
-    height: 40px;
+    height: 38px;
     background-color: rgba(48, 48, 48, 1);
-}
-
-/* Mobile form input box */
-#search-form {
-    height: 40px;
-    width: 100%;
 }
 
 /* Mobile search back icon */
 #mobile-search-back-arrow {
-    height: 40px;
+    height: 45px;
 }
 
 
@@ -223,6 +220,7 @@ hr {
 
 /* Mobile footer */
 
+/* Show element on mobile screen only */
 @media only screen and (max-width: 768px) {
     #mobile-footer {
       display: block; /* Show the element on mobile screens */
@@ -234,31 +232,40 @@ hr {
     }
 }
 
+/* Hide these elements on larger screens */
 @media only screen and (min-width: 769px) {
+    #cast-icon {
+        display: none;
+    }
     #mobile-footer {
-      display: none; /* Hide the element on larger screens */
+        display: none;
     }
 }
 
+/* Mobile footer links */
 .mobile-footer-link {
     text-decoration: none;
 }
 
+/* Mobile footer icons */
 .mobile-footer-icon {
     height: 30px;
     padding: 6px;
 }
 
+/* Mobile footer add icon */
 #mobile-footer-add-icon {
     height: 40px;
     margin-top: 5px;
 }
 
+/* Mobile footer text */
 .mobile-footer-text {
     font-size: 12px;
     color: white;
 }
 
+/* Mobile footer text */
 .mobile-footer-border-top {
     border-top: 2px solid rgba(48, 48, 48, 1);
 }
