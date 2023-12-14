@@ -271,3 +271,24 @@ hr {
 }
 
 /* End of mobile footer */
+
+
+/* Sub-navbar */
+
+/* Sub-navbar icons */
+.sub-navbar-icon {
+    height: 30px;
+}
+
+.sub-navbar-link {
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 8px;
+    height: 30px;
+    background-color: rgba(39, 39, 39, 1);
+    color: white;
+    font-size: 15px;
+    margin: auto 5px;
+}
+
+/* End of sub-navbar */
