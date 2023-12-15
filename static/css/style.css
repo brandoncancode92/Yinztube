@@ -277,18 +277,27 @@ hr {
 
 /* Sub-navbar icons */
 .sub-navbar-icon {
-    height: 30px;
+    height: 35px;
 }
 
 .sub-navbar-link {
     text-decoration: none;
-    border-radius: 5px;
-    padding: 8px;
-    height: 30px;
+    border-radius: 10px;
+    padding: 6px 10px 6px 10px;
+    height: 35px;
     background-color: rgba(39, 39, 39, 1);
     color: white;
     font-size: 15px;
-    margin: auto 5px;
+    margin: 0px 5px;
+    white-space: nowrap;
 }
+
+.sub-navbar-link:hover {
+    background-color: rgba(48, 48, 48, 1);
+    color: white;
+
+}
+
+
 
 /* End of sub-navbar */
