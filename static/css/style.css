@@ -298,6 +298,13 @@ hr {
 
 }
 
+#sub-navbar {
+    overflow-x: scroll;
+}
+
+#sub-navbar-back-caret {
+    visibility: hidden;
+}
 
 
 /* End of sub-navbar */
