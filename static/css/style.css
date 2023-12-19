@@ -280,6 +280,7 @@ hr {
     height: 35px;
 }
 
+/* Sub-navbar link */
 .sub-navbar-link {
     text-decoration: none;
     border-radius: 10px;
@@ -292,18 +293,30 @@ hr {
     white-space: nowrap;
 }
 
+/* Sub-navbar link effect */
 .sub-navbar-link:hover {
     background-color: rgba(48, 48, 48, 1);
     color: white;
 
 }
 
+ /* Sub-navbar */
 #sub-navbar {
     overflow-x: scroll;
 }
 
+/* Sub-navbar back caret */
 #sub-navbar-back-caret {
-    visibility: hidden;
+    /* visibility: hidden; */
+    margin-bottom: 12px;
+    margin-right: auto;
+}
+
+/* Sub-navbar forward caret */
+#sub-navbar-forward-caret {
+    /* visibility: hidden; */
+    margin-bottom: 12px;
+    margin-left: auto;
 }
 
 
