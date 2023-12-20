@@ -297,26 +297,26 @@ hr {
 .sub-navbar-link:hover {
     background-color: rgba(48, 48, 48, 1);
     color: white;
-
 }
 
  /* Sub-navbar */
-#sub-navbar {
+#sub-navbar-links {
     overflow-x: scroll;
+    transition: transform 0.3s ease-in-out; /* Smooth animation for JS scrolling */
 }
 
 /* Sub-navbar back caret */
 #sub-navbar-back-caret {
-    /* visibility: hidden; */
+    cursor: pointer; /* Make carets clickable */
     margin-bottom: 12px;
     margin-right: auto;
 }
 
 /* Sub-navbar forward caret */
 #sub-navbar-forward-caret {
-    /* visibility: hidden; */
     margin-bottom: 12px;
     margin-left: auto;
+    cursor: pointer; /* Make carets clickable */
 }
 
 
