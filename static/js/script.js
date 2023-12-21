@@ -90,26 +90,25 @@ for (const sectionId in showMoreDivs) {
     });
 }
 
+
 const linksEl = document.getElementById('sub-navbar-links');
 const forwardCaretEl = document.getElementById('sub-navbar-forward-caret');
 const backCaretEl = document.getElementById('sub-navbar-back-caret');
 
 // Scroll to the right when clicking the forward caret
 forwardCaretEl.addEventListener('click', function () {
-    linksEl.scrollTo({
-        left: linksEl.scrollWidth, /* Scroll to the end */
-        behavior: 'smooth'
-    });
-    backCaretEl.style.display = 'block'; /* Show back caret */
-    forwardCaretEl.style.visibility = 'hidden'; /* Hide forward caret */
+  linksEl.scrollTo({
+    left: linksEl.scrollWidth, /* Scroll to the end */
+    behavior: 'smooth' /* Smooth scrolling */
+  });
+  backCaretEl.style.visibility = 'visible';
+  forwardCaretEl.style.visibility = 'hidden';
 });
 
-// Scroll to the left when clicking the back caret
 backCaretEl.addEventListener('click', function () {
-    linksEl.scrollTo({
-        left: 0, /* Scroll to the beginning */
-        behavior: 'smooth'
-    });
-    backCaretEl.style.visibility = 'hidden'; /* Hide back caret */
-    forwardCaretEl.style.display = 'block'; /* Show forward caret */
-});
+    linksEl.scrollTo({ left: 0, behavior: 'smooth' });
+    setTimeout(() => {
+      backCaretEl.style.visibility = 'hidden';
+      forwardCaretEl.style.visibility = 'visible';
+    }, 10); // Delay in milliseconds
+  });

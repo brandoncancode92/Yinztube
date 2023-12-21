@@ -299,25 +299,20 @@ hr {
     color: white;
 }
 
- /* Sub-navbar */
-#sub-navbar-links {
-    overflow-x: scroll;
-    transition: transform 0.3s ease-in-out; /* Smooth animation for JS scrolling */
-}
-
 /* Sub-navbar back caret */
 #sub-navbar-back-caret {
+    visibility: hidden; /* Hide by default */
     cursor: pointer; /* Make carets clickable */
-    margin-bottom: 12px;
-    margin-right: auto;
 }
 
 /* Sub-navbar forward caret */
 #sub-navbar-forward-caret {
-    margin-bottom: 12px;
-    margin-left: auto;
-    cursor: pointer; /* Make carets clickable */
+    visibility: visible; /* Show by default */
+    cursor: pointer;
 }
 
+#sub-navbar-links {
+    overflow-x: hidden; /* Enable horizontal scrolling */
+}
 
 /* End of sub-navbar */
