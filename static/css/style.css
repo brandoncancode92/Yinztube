@@ -303,16 +303,27 @@ hr {
 #sub-navbar-back-caret {
     visibility: hidden; /* Hide by default */
     cursor: pointer; /* Make carets clickable */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Sub-navbar forward caret */
 #sub-navbar-forward-caret {
     visibility: visible; /* Show by default */
     cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+/* Sub-navbar links */
 #sub-navbar-links {
     overflow-x: hidden; /* Enable horizontal scrolling */
 }
+
+/* New to you sub-navbar link */
+#sub-navbar-new-to-you-link {
+    background-image: linear-gradient(to bottom left, purple, blue);
+}
+
 
 /* End of sub-navbar */

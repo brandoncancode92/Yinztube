@@ -90,25 +90,26 @@ for (const sectionId in showMoreDivs) {
     });
 }
 
-
+// Variables for back and forward caret functions
 const linksEl = document.getElementById('sub-navbar-links');
 const forwardCaretEl = document.getElementById('sub-navbar-forward-caret');
 const backCaretEl = document.getElementById('sub-navbar-back-caret');
 
-// Scroll to the right when clicking the forward caret
+// Function for scrolling to the right when clicking the forward caret
 forwardCaretEl.addEventListener('click', function () {
-  linksEl.scrollTo({
-    left: linksEl.scrollWidth, /* Scroll to the end */
-    behavior: 'smooth' /* Smooth scrolling */
-  });
-  backCaretEl.style.visibility = 'visible';
-  forwardCaretEl.style.visibility = 'hidden';
+    linksEl.scrollTo({
+        left: linksEl.scrollWidth, /* Scroll to the end */
+        behavior: 'smooth' /* Smooth scrolling */
+    });
+    backCaretEl.style.visibility = 'visible';
+    forwardCaretEl.style.visibility = 'hidden';
 });
 
+// Function for scrolling to the left when clicking the back caret
 backCaretEl.addEventListener('click', function () {
-    linksEl.scrollTo({ left: 0, behavior: 'smooth' });
+    linksEl.scrollTo({ left: 0, behavior: 'smooth' }); /* Scroll to the beginning */
     setTimeout(() => {
-      backCaretEl.style.visibility = 'hidden';
-      forwardCaretEl.style.visibility = 'visible';
-    }, 10); // Delay in milliseconds
-  });
+        backCaretEl.style.visibility = 'hidden';
+        forwardCaretEl.style.visibility = 'visible';
+    }, 30); // Delay in milliseconds
+});
