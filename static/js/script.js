@@ -113,3 +113,4 @@ backCaretEl.addEventListener('click', function () {
         forwardCaretEl.style.visibility = 'visible';
     }, 30); // Delay in milliseconds
 });
+
