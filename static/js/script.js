@@ -114,3 +114,16 @@ backCaretEl.addEventListener('click', function () {
     }, 30); // Delay in milliseconds
 });
 
+// Hide collapsed-column-navbar by default
+window.addEventListener("load", function() {
+    document.getElementById("collapsed-column-navbar").style.display = "none";
+});
+
+// Toggle visibility of column-navbar and collapsed-column-navbar on hamburger click
+document.getElementById("hamburger").addEventListener("click", function() {
+    const columnNavbar = document.getElementById("column-navbar");
+    const collapsedColumnNavbar = document.getElementById("collapsed-column-navbar");
+
+    columnNavbar.style.display = columnNavbar.style.display === "none" ? "block" : "none";
+    collapsedColumnNavbar.style.display = columnNavbar.style.display === "none" ? "block" : "none";
+});

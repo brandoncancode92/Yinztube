@@ -342,3 +342,22 @@ hr {
 }
 
 /* End of sub-navbar */
+
+#collapsed-column-navbar {
+    width: auto;
+}
+
+.collapsed-column-navbar-link {
+    text-decoration: none;
+    color: white;
+}
+
+.collapsed-column-navbar-link-div:hover {
+    background-color: rgba(39, 39, 39, 1);
+    color: white;
+    border-radius: 20px;
+}
+
+.collapsed-navbar-text {
+    font-size: 10px;
+}
