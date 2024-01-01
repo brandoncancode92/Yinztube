@@ -17,7 +17,7 @@
     <div class="container-fluid">
         <!-- Header -->
         <header>
-            <div id="main-navbar">
+            <div id="main-navbar" class="mt-2">
                 <!-- Navbar -->
                 <nav class="col-sm-12 col-md-12 col-lg-12 d-flex justify-content-between align-items-center">
                     <div class="col-md-3 col-lg-3 d-flex justify-content-start">
@@ -38,21 +38,24 @@
                     <!-- Search form -->
                     <div id="form-search" class="col-md-4 col-lg-4 d-flex align-items-center">
                         <form class="col-md-10 col-lg-10" action="#" method="#">
-                            <input class="search-form" type="text" placeholder=" Search">
+                            <input class="search-form text-white" type="text" placeholder=" Search">
                         </form>
                         <img id="microphone" class="mx-3" src="/Yinztube/static/img/microphone.png" alt="Microphone">
+                        <div id="microphone-popup-div" class="hidden">Search with your voice</div>
                     </div>
                     <!-- End of search form -->
                     <!-- Nav-links -->
                     <div id="nav-links" class="col-md-3 col-lg-3 d-flex justify-content-end align-items-center">
                         <a href="#">
                             <img id="video-camera" class="nav-icon" src="/Yinztube/static/img/video-camera.png" alt="Video camera">
+                            <div id="video-camera-popup-div" class="hidden">Create</div>
                         </a>
                         <a href="#">
                             <img id="cast-icon" class="nav-icon" src="/Yinztube/static/img/cast-icon.png" alt="Cast icon">
                         </a>
                         <a href="#">
                             <img id="notification-bell" class="nav-icon" src="/Yinztube/static/img/notification-bell.png" alt="Notification bell">
+                            <div id="notification-bell-popup-div" class="hidden">Notifications</div>
                         </a>
                         <a href="#">
                             <img id="user-profile-icon" class="nav-icon" src="/Yinztube/static/img/b_w_profile_pic.png" alt="User profile icon">
@@ -81,7 +84,7 @@
             <div class="d-flex mt-3 col-lg-12 col-md-12">
                 <!-- Column navbar -->
                 <div class="col-md-1 col-lg-1 align-items-center">
-                    <div id="column-navbar">
+                    <div id="column-navbar" class="mx-2">
                         <a class="link col-md-12 col-lg-12 mb-1" href="#">
                             <div class="d-flex align-items-center column-navbar-link home-bg">
                                 <div class="col-md-4 col-lg-4">
@@ -353,6 +356,16 @@
                                 </div>
                             </div>
                         </a>
+                        <a class="link col-md-12 col-lg-12 mb-1 sub-show-more" href="#">
+                            <div class="d-flex align-items-center column-navbar-link">
+                                <div class="col-md-4 col-lg-4">
+                                    <img class="column-navbar-channel-icon" src="/Yinztube/static/img/add-icon.png" alt="Pittsburgh Dad logo">
+                                </div>
+                                <div class="col-md-8 col-lg-8">
+                                    <p class="my-1 column-navbar-text">Browse Channels</p>
+                                </div>
+                            </div>
+                        </a>
                         <div id="sub-show-less-div" class="link col-md-12 col-lg-12 sub-show-more">
                             <div class="d-flex align-items-center column-navbar-link">
                                 <div class="col-md-4 col-lg-4">
@@ -581,13 +594,13 @@
                         <a class="collapsed-column-navbar-link" href="#">
                             <div class="col-md-12 collapsed-column-navbar-link-div  d-flex flex-column align-items-center">
                                 <img class="column-navbar-icon" src="/Yinztube/static/img/shorts.png" alt="Home">
-                                <p class="collapsed-navbar-text">Shorts</p>
+                                <p class="collapsed-navbar-text">Clips</p>
                             </div>
                         </a>
                         <a class="collapsed-column-navbar-link" href="#">
                             <div class="col-md-12 collapsed-column-navbar-link-div  d-flex flex-column align-items-center">
                                 <img class="column-navbar-icon" src="/Yinztube/static/img/subscriptions.png" alt="Home">
-                                <p class="collapsed-navbar-text">Subscriptions</p>
+                                <p class="collapsed-navbar-text">Subs</p>
                             </div>
                         </a>
                         <a class="collapsed-column-navbar-link" href="#">
@@ -599,10 +612,10 @@
                     </div>
                 </div>
                 <!-- End of column navbar -->
-                <div class="d-flex flex-column align-items-center col-sm-11 col-md-11 col-lg-11">
-                    <div id="sub-navbar-div" class="d-flex justify-content-between align-items-center col-sm-12 col-md-12 col-lg-12">
-                        <img id="sub-navbar-back-caret" class="sub-navbar-icon" src="/Yinztube/static/img/left-caret-icon.png" alt="Back caret">
-                        <div id="sub-navbar" class="col-md-11 col-lg-11">
+                <div class="d-flex flex-column align-items-center col-sm-11 col-md-11 col-lg-11 border border-warning">
+                    <div id="sub-navbar-div" class="d-flex justify-content-between align-items-center col-sm-12 col-md-12 col-lg-12 border border-danger">
+                        <img id="sub-navbar-back-caret" class="sub-navbar-icon border border-success" src="/Yinztube/static/img/left-caret-icon.png" alt="Back caret">
+                        <div id="sub-navbar" class="col-md-11 col-lg-11 border border-info">
                             <div id="sub-navbar-links" class="d-flex">
                                 <a class="sub-navbar-link d-flex" href="#">
                                     <p>All</p>
@@ -666,19 +679,89 @@
                                 </a>
                             </div>
                         </div>
-                        <img id="sub-navbar-forward-caret" class="sub-navbar-icon" src="/Yinztube/static/img/right-caret-icon.png" alt="Right caret">
+                        <img id="sub-navbar-forward-caret" class="sub-navbar-icon border border-success" src="/Yinztube/static/img/right-caret-icon.png" alt="Right caret">
+                    </div>
+                    <div id="mobile-sub-navbar" class="col-sm-12 border border-info">
+                        <div id="sub-navbar-links" class="d-flex">
+                            <a class="sub-navbar-link d-flex" href="#">
+                                <img src="#" alt="Compass">
+                            </a>
+                            <a class="sub-navbar-link d-flex" href="#">
+                                <p>All</p>
+                            </a>
+                            <a class="sub-navbar-link d-flex" href="#">
+                                <p>Gaming</p>
+                            </a>
+                            <a class="sub-navbar-link d-flex" href="#">
+                                <p>Music</p>
+                            </a>
+                            <a class="sub-navbar-link d-flex" href="#">
+                                <p>Live</p>
+                            </a>
+                            <a class="sub-navbar-link d-flex" href="#">
+                                <p>Machines</p>
+                            </a>
+                            <a class="sub-navbar-link d-flex" href="#">
+                                <p>Computer Programming</p>
+                            </a>
+                            <a class="sub-navbar-link d-flex" href="#">
+                                <p>3D Modeling</p>
+                            </a>
+                            <a class="sub-navbar-link d-flex" href="#">
+                                <p>Editing</p>
+                            </a>
+                            <a class="sub-navbar-link d-flex" href="#">
+                                <p>Electronic components</p>
+                            </a>
+                            <a class="sub-navbar-link d-flex" href="#">
+                                <p>Retrogaming</p>
+                            </a>
+                            <a class="sub-navbar-link d-flex" href="#">
+                                <p>Game engines</p>
+                            </a>
+                            <a class="sub-navbar-link d-flex" href="#">
+                                <p>Podcasts</p>
+                            </a>
+                            <a class="sub-navbar-link d-flex" href="#">
+                                <p>Sculptures</p>
+                            </a>
+                            <a class="sub-navbar-link d-flex" href="#">
+                                <p>Action figure</p>
+                            </a>
+                            <a class="sub-navbar-link d-flex" href="#">
+                                <p>Chill-out Music</p>
+                            </a>
+                            <a class="sub-navbar-link d-flex" href="#">
+                                <p>Artwork</p>
+                            </a>
+                            <a class="sub-navbar-link d-flex" href="#">
+                                <p>Computer keyboard</p>
+                            </a>
+                            <a class="sub-navbar-link d-flex" href="#">
+                                <p>Recently uploaded</p>
+                            </a>
+                            <a class="sub-navbar-link d-flex" href="#">
+                                <p>Watched</p>
+                            </a>
+                            <a id="sub-navbar-new-to-you-link" class="sub-navbar-link d-flex" href="#">
+                                <p>New to you</p>
+                            </a>
+                        </div>
                     </div>
                     <!-- Article -->
                     <article>
-                        <div id="advertisements">
+                        <div id="advertisements" class="mt-2">
 
                         </div>
                     </article>
                     <!-- End of Article -->
-                    <div id="videos" class="d-flex">
+                    <div id="main-videos" class="d-flex mt-2">
 
                     </div>
-                    <div id="clips" class="d-flex">
+                    <div id="clips" class="d-flex mt-2">
+
+                    </div>
+                    <div id="secondary-videos" class="d-flex mt-2">
 
                     </div>
                 </div>

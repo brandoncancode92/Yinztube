@@ -33,7 +33,7 @@
 }
 
 /* Navbar search form */
-.search-form {
+input.search-form {
     height: 35px;
     width: 100%;
     padding: 15px;
@@ -86,6 +86,72 @@
 /* User profile icon */
 #user-profile-icon {
     margin-left: 10px;
+}
+
+/* Microphone pop up div */
+#microphone-popup-div {
+    position: absolute; /* Position relative to parent */
+    z-index: 999; /* Ensure high stacking order */
+    top: 68px;
+    left: 62.5%;
+    transform: translateX(-50%); /* Center horizontally */
+    background-color: rgba(113, 113, 113, 1);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    display: none; /* Initially hidden */
+    transition: opacity 0.5s ease-in-out, visibility 0s 0.5s; /* Smooth fade-in/out */
+}
+
+/* Microphone effect */
+#microphone:hover + #microphone-popup-div {
+    display: block; /* Visible on hover */
+    opacity: 0.9;
+}
+
+/* Video camera pop up div */
+#video-camera-popup-div {
+    position: absolute; /* Position relative to parent */
+    z-index: 999; /* Ensure high stacking order */
+    top: 68px;
+    left: 93.5%;
+    transform: translateX(-50%); /* Center horizontally */
+    background-color: rgba(113, 113, 113, 1);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    display: none; /* Initially hidden */
+    transition: opacity 0.5s ease-in-out, visibility 0s 0.5s; /* Smooth fade-in/out */
+}
+
+/* Video camera effects */
+#video-camera:hover + #video-camera-popup-div {
+    display: block; /* Visible on hover */
+    opacity: 0.9;
+}
+
+/* Notification bell pop up div */
+#notification-bell-popup-div {
+    position: absolute; /* Position relative to parent */
+    z-index: 999; /* Ensure high stacking order */
+    top: 68px;
+    left: 96%;
+    transform: translateX(-50%); /* Center horizontally */
+    background-color: rgba(113, 113, 113, 1);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    display: none; /* Initially hidden */
+    transition: opacity 0.5s ease-in-out, visibility 0s 0.5s; /* Smooth fade-in/out */
+}
+
+/* Notification bell effects */
+#notification-bell:hover + #notification-bell-popup-div {
+    display: block; /* Visible on hover */
+    opacity: 0.9;
 }
 
 /* Navbar media query for mobile screens */
@@ -246,6 +312,9 @@ hr {
     #mobile-footer {
         display: none;
     }
+    #mobile-sub-navbar {
+        display: none;
+    }
 }
 
 /* Mobile footer links */
@@ -284,7 +353,7 @@ hr {
 
 /* Sub-navbar icons */
 .sub-navbar-icon {
-    height: 35px;
+    height: 40px;
 }
 
 /* Sub-navbar link */
@@ -312,7 +381,7 @@ hr {
     cursor: pointer; /* Make carets clickable */
     margin-left: auto;
     margin-right: auto;
-    padding: 5px;
+    padding: 10px;
 }
 
 /* Sub-navbar forward caret */
@@ -321,7 +390,7 @@ hr {
     cursor: pointer;
     margin-left: auto;
     margin-right: auto;
-    padding: 5px;
+    padding: 10px;
 }
 
 /* Sub-navbar links */
@@ -343,21 +412,33 @@ hr {
 
 /* End of sub-navbar */
 
-#collapsed-column-navbar {
-    width: auto;
-}
 
+/* Collapsed navbar */
+
+/* Collapsed column navbar link */
 .collapsed-column-navbar-link {
     text-decoration: none;
     color: white;
 }
 
+/* Collapsed column navbar link div hover */
 .collapsed-column-navbar-link-div:hover {
     background-color: rgba(39, 39, 39, 1);
     color: white;
     border-radius: 20px;
 }
 
+/* Collapsed navbar text */
 .collapsed-navbar-text {
     font-size: 10px;
 }
+
+/* End collapsed navbar */
+
+
+
+/* Mobile sub-navbar */
+#mobile-sub-navbar {
+    overflow-x: hidden;
+}
+/* End of mobile sub-navbar */
