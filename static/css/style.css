@@ -186,6 +186,9 @@ input.search-form {
     #sub-navbar {
         display: none;
     }
+    #sub-navbar-back-caret {
+        display: none;
+    }
     #sub-navbar-forward-caret {
         display: none;
     }
@@ -444,7 +447,5 @@ hr {
 
 
 /* Mobile sub-navbar */
-#mobile-sub-navbar-links {
-    overflow-x: hidden;
-}
+
 /* End of mobile sub-navbar */
