@@ -456,9 +456,12 @@ hr {
     }
 
     #mobile-sub-navbar {
-        width: 300px; /* Set a fixed width for scrolling */
+        width: 300px; /* Set a fixed width for scrolling
+        (This has been adjusted with Javascript) */
+
         overflow-x: auto; /* Enable horizontal scrolling */
         -webkit-overflow-scrolling: touch; /* Smooth touch scrolling */
     }
 }
+
 /* End of mobile sub-navbar */
