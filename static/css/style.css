@@ -6,9 +6,10 @@
 
 /* Wraps the HTML body for
 hidding mobile overflow */
-#body-wrapper {
+/* #body-wrapper {
     overflow-x: hidden;
-}
+} */
+
 
 /* Page background */
 .background {
@@ -448,4 +449,16 @@ hr {
 
 /* Mobile sub-navbar */
 
+@media (max-width: 768px) {
+    #mobile-sub-navbar-div {
+        overflow-x: hidden; /* Hide horizontal overflow */
+        width: 100vw; /* Take up entire viewport width */
+    }
+
+    #mobile-sub-navbar {
+        width: 300px; /* Set a fixed width for scrolling */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        -webkit-overflow-scrolling: touch; /* Smooth touch scrolling */
+    }
+}
 /* End of mobile sub-navbar */

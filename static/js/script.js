@@ -127,3 +127,19 @@ document.getElementById("hamburger").addEventListener("click", function() {
     columnNavbar.style.display = columnNavbar.style.display === "none" ? "block" : "none";
     collapsedColumnNavbar.style.display = columnNavbar.style.display === "none" ? "block" : "none";
 });
+
+
+// 1. Get a reference to the mobile sub-navbar element:
+const mobileSubNavbar = document.getElementById('mobile-sub-navbar');
+
+// 2. Add a listener for window resizing events:
+window.addEventListener('resize', () => {
+  // 3. Calculate the desired width based on viewport width:
+  const calculatedWidth = window.innerWidth * 0.8; // Use 80% of viewport width
+
+  // 4. Set the calculated width to the element's style:
+    mobileSubNavbar.style.width = `${calculatedWidth}px`;
+});
+
+// 5. Trigger an initial resize event to set the width on page load:
+window.dispatchEvent(new Event('resize'));
