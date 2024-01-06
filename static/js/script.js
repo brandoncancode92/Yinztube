@@ -143,3 +143,10 @@ window.addEventListener('resize', () => {
 
 // 5. Trigger an initial resize event to set the width on page load:
 window.dispatchEvent(new Event('resize'));
+
+const mobileSubNavbarCompass = document.getElementById('mobile-sub-navbar-compass');
+const mobileZIndexColumnNavbarDiv = document.getElementById('mobile-z-index-column-navbar-div');
+
+mobileSubNavbarCompass.addEventListener('click', () => {
+  mobileZIndexColumnNavbarDiv.style.display = 'block'; // Or any other display style you prefer
+});
