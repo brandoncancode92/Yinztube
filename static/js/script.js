@@ -150,3 +150,43 @@ const mobileZIndexColumnNavbarDiv = document.getElementById('mobile-z-index-colu
 mobileSubNavbarCompass.addEventListener('click', () => {
   mobileZIndexColumnNavbarDiv.style.display = 'block'; // Or any other display style you prefer
 });
+
+const navbarDiv = document.getElementById('mobile-z-index-column-navbar-div');
+const footer = document.getElementById('mobile-footer');
+
+let startX;
+
+navbarDiv.addEventListener('touchstart', handleTouchStart);
+navbarDiv.addEventListener('touchmove', handleTouchMove);
+navbarDiv.addEventListener('touchend', handleTouchEnd);
+
+function handleTouchStart(event) {
+    startX = event.touches[0].clientX;
+}
+
+function handleTouchMove(event) {
+    const deltaX = event.touches[0].clientX - startX;
+    const translateX = Math.min(deltaX, 0); // Limit translation to a maximum of 0 (original position)
+
+    navbarDiv.style.transform = `translateX(${translateX}px)`;
+    navbarDiv.style.opacity = 1 - Math.abs(deltaX / navbarDiv.offsetWidth); // Fade out as it slides
+}
+
+function handleTouchEnd(event) {
+    if (navbarDiv.style.transform !== 'none') {
+    navbarDiv.style.transition = 'transform 0.3s ease-out, opacity 0.3s ease-out';
+    navbarDiv.style.transform = 'translateX(-100%)'; // Slide off completely
+    navbarDiv.style.opacity = 0;
+    navbarDiv.querySelector('#mobile-footer').style.display = 'none'; // Hide the footer after the transition
+    }
+}
+const compass = document.getElementById('mobile-sub-navbar-compass');
+
+compass.addEventListener('click', () => {
+    if (navbarDiv.style.transform === 'translateX(-100%)') {
+      navbarDiv.style.transition = 'transform 0.3s ease-in-out, opacity 0.3s ease-in-out'; // Add transition properties for sliding in
+        navbarDiv.style.transform = 'translateX(0)';
+        navbarDiv.style.opacity = 1;
+        navbarDiv.querySelector('#mobile-footer').style.display = 'block';
+    }
+});
