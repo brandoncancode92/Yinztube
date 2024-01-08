@@ -4,13 +4,6 @@
     padding: 0;
 }
 
-/* Wraps the HTML body for
-hidding mobile overflow */
-/* #body-wrapper {
-    overflow-x: hidden;
-} */
-
-
 /* Page background */
 .background {
     background-color: rgba(15, 15, 15, 1);
@@ -464,11 +457,47 @@ hr {
     }
 }
 
+/* Mobile sub-navbar compass */
+@media (max-width: 768px) { /* Mobile screens (up to 768px) */
+    #mobile-sub-navbar-compass:focus-within ~ #mobile-z-index-column-navbar-div {
+      /* Visible when compass is clicked/focused on mobile */
+      display: block; /* Or your preferred display style */
+    }
+}
+
+/* Mobile new to you sub-navbar link */
+#mobile-sub-navbar-new-to-you-link {
+    text-decoration: none;
+    border: 2px solid teal;
+    border-radius: 10px;
+    padding: 4px 10px 4px 10px;
+    height: 35px;
+    background-color: rgba(39, 39, 39, 1);
+    color: white;
+    font-size: 15px;
+    margin: 0px 5px;
+    white-space: nowrap;
+}
+
+/* Mobile feedback sub-navbar link */
+#mobile-sub-navbar-feedback-link {
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 4px 10px 4px 10px;
+    height: 35px;
+    background-color: rgba(15, 15, 15, 1);
+    color: lightskyblue;
+    font-size: 15px;
+    margin: 0px 5px;
+    white-space: nowrap;
+}
+
 /* End of mobile sub-navbar */
 
 
 /* Mobile z-index column navbar */
 
+/* Mobile z-index column navbar div */
 #mobile-z-index-column-navbar-div {
     display: none; /* Hide by default on all screens */
     background-color: rgba(39, 39, 39, 1);
@@ -480,15 +509,7 @@ hr {
     z-index: 999; /* Or any sufficiently high value to ensure it's on top */
 }
 
-@media (max-width: 768px) { /* Mobile screens (up to 768px) */
-    #mobile-sub-navbar-compass:focus-within ~ #mobile-z-index-column-navbar-div {
-      /* Visible when compass is clicked/focused on mobile */
-      display: block; /* Or your preferred display style */
-    }
-}
-
-/* End of mobile z-index column navbar */
-
+/* Mobile z-index column navbar footer */
 #mobile-z-index-column-navbar-footer {
     position: fixed;
     bottom: 0;
@@ -500,3 +521,4 @@ hr {
 }
 
 
+/* End of mobile z-index column navbar */
