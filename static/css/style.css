@@ -522,3 +522,32 @@ hr {
 
 
 /* End of mobile z-index column navbar */
+
+
+/* Advertisements */
+
+/* Main advertisement */
+.advertisement {
+    height: 325px;
+    border-radius: 15px;
+}
+
+/* Secondary advertisement */
+.advertisement-2 {
+    height: 175px;
+    border-radius: 15px;
+}
+
+/* Advertisement logo */
+.advert-logo {
+    width: 100%;
+}
+
+/* Head and shoulders logo */
+.head-and-shoulders-logo {
+    border-radius: 15px;
+}
+
+
+
+/* End of advertisements */

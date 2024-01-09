@@ -190,3 +190,4 @@ compass.addEventListener('click', () => {
         navbarDiv.querySelector('#mobile-footer').style.display = 'block';
     }
 });
+
