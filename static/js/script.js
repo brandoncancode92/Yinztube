@@ -191,3 +191,27 @@ compass.addEventListener('click', () => {
     }
 });
 
+// Select the ads and container
+const ads = document.querySelectorAll('#advertisements .advert');
+const adContainer = document.getElementById('advertisements');
+
+let currentAdIndex = 0;
+
+// Function to rotate ads
+ads[0].style.display = 'block';
+
+function showNextAd() {
+  ads[currentAdIndex].classList.remove('active');
+  ads[currentAdIndex].style.display = 'none'; // Hide the previous ad
+
+  currentAdIndex = (currentAdIndex + 1) % ads.length;
+
+  ads[currentAdIndex].classList.add('active');
+  ads[currentAdIndex].style.display = 'block'; // Show the next ad
+}
+
+// Start the ad rotation
+setInterval(showNextAd, 5000); // Change ads every 5 seconds
+
+// Initially show the first ad
+ads[0].classList.add('active');

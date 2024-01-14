@@ -548,6 +548,18 @@ hr {
     border-radius: 15px;
 }
 
+/* Advertisement container */
+
+  /* Individual ads */
+#advertisements .advert {
+    opacity: 0; /* Initially hidden */
+    transition: opacity 1s ease-in-out; /* Smooth fade transition */
+}
+
+  /* Active ad */
+#advertisements .advert.active {
+    opacity: 1; /* Visible */
+}
 
 
 /* End of advertisements */
