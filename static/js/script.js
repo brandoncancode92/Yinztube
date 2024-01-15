@@ -201,17 +201,17 @@ let currentAdIndex = 0;
 ads[0].style.display = 'block';
 
 function showNextAd() {
-  ads[currentAdIndex].classList.remove('active');
-  ads[currentAdIndex].style.display = 'none'; // Hide the previous ad
+    ads[currentAdIndex].classList.remove('active');
+    ads[currentAdIndex].style.display = 'none'; // Hide the previous ad
 
-  currentAdIndex = (currentAdIndex + 1) % ads.length;
+    currentAdIndex = (currentAdIndex + 1) % ads.length;
 
-  ads[currentAdIndex].classList.add('active');
-  ads[currentAdIndex].style.display = 'block'; // Show the next ad
+    ads[currentAdIndex].classList.add('active');
+    ads[currentAdIndex].style.display = 'block'; // Show the next ad
 }
 
 // Start the ad rotation
-setInterval(showNextAd, 5000); // Change ads every 5 seconds
+setInterval(showNextAd, 30000); // Change ads every 5 seconds
 
 // Initially show the first ad
 ads[0].classList.add('active');

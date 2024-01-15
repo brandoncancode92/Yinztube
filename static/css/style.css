@@ -186,6 +186,9 @@ input.search-form {
     #sub-navbar-forward-caret {
         display: none;
     }
+    #advertisements {
+        display: none;
+    }
 }
 
 /* Mobile search navbar */
@@ -549,6 +552,13 @@ hr {
 }
 
 /* Advertisement container */
+
+/* Advertisement container */
+#advertisements {
+    height: 350px;
+    width: 100%;
+    overflow-y: hidden;
+}
 
   /* Individual ads */
 #advertisements .advert {
