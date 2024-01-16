@@ -390,6 +390,28 @@ hr {
     padding: 10px;
 }
 
+/* Back caret pop up div */
+#sub-navbar-back-caret-popup-div {
+    position: absolute; /* Position relative to parent */
+    z-index: 999; /* Ensure high stacking order */
+    top: 128px;
+    left: 10.8%;
+    transform: translateX(-50%); /* Center horizontally */
+    background-color: rgba(113, 113, 113, 1);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    display: none; /* Initially hidden */
+    transition: opacity 0.5s ease-in-out, visibility 0s 0.5s; /* Smooth fade-in/out */
+}
+
+/* Back caret effect */
+#sub-navbar-back-caret:hover + #sub-navbar-back-caret-popup-div {
+    display: block; /* Visible on hover */
+    opacity: 0.9;
+}
+
 /* Sub-navbar forward caret */
 #sub-navbar-forward-caret {
     visibility: visible; /* Show by default */
@@ -397,6 +419,28 @@ hr {
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
+}
+
+/* Forward caret pop up div */
+#sub-navbar-forward-caret-popup-div {
+    position: absolute; /* Position relative to parent */
+    z-index: 999; /* Ensure high stacking order */
+    top: 128px;
+    left: 97.5%;
+    transform: translateX(-50%); /* Center horizontally */
+    background-color: rgba(113, 113, 113, 1);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    display: none; /* Initially hidden */
+    transition: opacity 0.5s ease-in-out, visibility 0s 0.5s; /* Smooth fade-in/out */
+}
+
+/* Forward caret effect */
+#sub-navbar-forward-caret:hover + #sub-navbar-forward-caret-popup-div {
+    display: block; /* Visible on hover */
+    opacity: 0.9;
 }
 
 /* Sub-navbar links */
