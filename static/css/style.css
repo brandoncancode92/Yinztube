@@ -622,3 +622,18 @@ hr {
 
 
 /* End of advertisements */
+
+/* Main videos */
+
+/* Video card channel logo */
+.channel-logo {
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Video card font */
+.video-font {
+    font-size: 12px;
+}
+
+/* End of main videos */
