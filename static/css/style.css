@@ -460,6 +460,11 @@ hr {
     border-radius: 50%;
 }
 
+/* Sub-navbar new to you link */
+#sub-navbar-new-to-you-link {
+    background-color: red;
+}
+
 /* End of sub-navbar */
 
 
