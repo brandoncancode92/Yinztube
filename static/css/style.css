@@ -623,17 +623,31 @@ hr {
 
 /* End of advertisements */
 
+
+
 /* Main videos */
 
 /* Video card channel logo */
 .channel-logo {
     height: 40px;
     border-radius: 50%;
+    margin-right: 10px;
 }
 
-/* Video card font */
-.video-font {
-    font-size: 12px;
+/* Video card title */
+.video-card-title {
+    font-size: medium;
+    color: white;
+}
+
+/* Video card text */
+.video-card-text {
+    font-size: small;
+}
+
+/* Video thumbnail border */
+.video-border {
+    border-radius: 15px;
 }
 
 /* End of main videos */
