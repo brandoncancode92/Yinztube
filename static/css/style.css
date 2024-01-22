@@ -650,4 +650,64 @@ hr {
     border-radius: 15px;
 }
 
+#video-one-hover-image {
+    display: none; /* Hide the hover image by default */
+}
+
+#main-video-one:hover #video-one-main-image {
+    display: none; /* Hide the main image on hover */
+}
+
+#main-video-one:hover #video-one-hover-image {
+    display: block; /* Reveal the hover image on hover */
+}
+
+#video-two-hover-image {
+    display: none; /* Hide the hover image by default */
+}
+
+#main-video-two:hover #video-two-main-image {
+    display: none; /* Hide the main image on hover */
+}
+
+#main-video-two:hover #video-two-hover-image {
+    display: block; /* Reveal the hover image on hover */
+}
+
+#video-three-hover-image {
+    display: none; /* Hide the hover image by default */
+}
+
+#main-video-three:hover #video-three-main-image {
+    display: none; /* Hide the main image on hover */
+}
+
+#main-video-three:hover #video-three-hover-image {
+    display: block; /* Reveal the hover image on hover */
+}
+
+#video-four-hover-image {
+    display: none; /* Hide the hover image by default */
+}
+
+#main-video-four:hover #video-four-main-image {
+    display: none; /* Hide the main image on hover */
+}
+
+#main-video-four:hover #video-four-hover-image {
+    display: block; /* Reveal the hover image on hover */
+}
+
+#video-five-hover-image {
+    display: none; /* Hide the hover image by default */
+}
+
+#main-video-five:hover #video-five-main-image {
+    display: none; /* Hide the main image on hover */
+}
+
+#main-video-five:hover #video-five-hover-image {
+    display: block; /* Reveal the hover image on hover */
+}
+
 /* End of main videos */
