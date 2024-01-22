@@ -212,7 +212,7 @@ input.search-form {
 
 /* Column navbar */
 #column-navbar {
-    height: 1250px;
+    height: 100vh;
     overflow-y: scroll;
 }
 
@@ -711,3 +711,8 @@ hr {
 }
 
 /* End of main videos */
+
+#content-container {
+    height: 100vh;
+    overflow-y: scroll;
+}
