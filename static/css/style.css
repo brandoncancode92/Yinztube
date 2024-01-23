@@ -5,8 +5,13 @@
 }
 
 /* Page background */
-.background {
+#background {
     background-color: rgba(15, 15, 15, 1);
+}
+
+#page-container {
+    height: 100vh;
+    overflow-y: hidden;
 }
 
 /* Hamburger bars */
@@ -212,7 +217,7 @@ input.search-form {
 
 /* Column navbar */
 #column-navbar {
-    height: 100vh;
+    height: 95vh;
     overflow-y: scroll;
 }
 
@@ -713,6 +718,6 @@ hr {
 /* End of main videos */
 
 #content-container {
-    height: 100vh;
+    height: 90vh;
     overflow-y: scroll;
 }
