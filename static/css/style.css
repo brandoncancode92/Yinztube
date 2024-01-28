@@ -513,13 +513,11 @@ hr {
 @media (max-width: 768px) {
     #mobile-sub-navbar-div {
         overflow-x: hidden; /* Hide horizontal overflow */
-        width: 100vw; /* Take up entire viewport width */
+        width: 94vw; /* Take up entire viewport width */
     }
 
     #mobile-sub-navbar {
-        width: 300px; /* Set a fixed width for scrolling
-        (This has been adjusted with Javascript) */
-
+        /* Width is being handled by Javascript */
         overflow-x: auto; /* Enable horizontal scrolling */
         -webkit-overflow-scrolling: touch; /* Smooth touch scrolling */
     }
@@ -745,19 +743,22 @@ hr {
 
 /* End of main videos */
 
+/* Content container */
 #content-container {
     height: 90vh;
     overflow-y: scroll;
 }
 
+/* Mobile advertisement thumbnail */
 .mobile-advert-thumbnail {
     width: 100%;
     margin-bottom: 10px;
 }
 
+/* Mobile advertisement button one */
 .mobile-advert-button-one {
     text-decoration: none;
-    width: 205px;
+    width: 185px;
     color: rgba(13, 143, 240, 1);
     text-align: center;
     border: 1px solid rgba(113, 113, 113, 1);
@@ -765,13 +766,26 @@ hr {
     padding: 5px;
 }
 
+/* Mobile advertisement button two */
 .mobile-advert-button-two {
     text-decoration: none;
     background-color: rgba(13, 143, 240, 1);
-    width: 205px;
+    width: 185px;
     color: black;
     text-align: center;
     border: 2px solid rgba(13, 143, 240, 1);
     border-radius: 20px;
     padding: 5px;
 }
+
+/* Mobile advertisement large button  */
+.mobile-advert-button-large {
+    text-decoration: none;
+    background-color: rgba(222, 226, 230, 1);
+    width: 100%;
+    color: black;
+    text-align: center;
+    border-radius: 20px;
+    padding: 5px;
+}
+
