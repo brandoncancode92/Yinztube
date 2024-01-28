@@ -215,3 +215,4 @@ setInterval(showNextAd, 30000); // Change ads every 5 seconds
 
 // Initially show the first ad
 ads[0].classList.add('active');
+

@@ -194,6 +194,9 @@ input.search-form {
     #advertisements {
         display: none;
     }
+    #med-large-videos-div {
+        display: none;
+    }
 }
 
 /* Mobile search navbar */
