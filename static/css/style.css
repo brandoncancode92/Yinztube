@@ -329,6 +329,14 @@ hr {
     #mobile-sub-navbar {
         display: none;
     }
+    #mobile-advertisements {
+        display: none;
+    }
+}
+
+/* Mobile footer */
+#mobile-footer {
+    background-color: rgba(15, 15, 15, 1);
 }
 
 /* Mobile footer links */
@@ -546,7 +554,7 @@ hr {
     padding: 4px 10px 4px 10px;
     height: 35px;
     background-color: rgba(15, 15, 15, 1);
-    color: lightskyblue;
+    color: rgba(13, 143, 240, 1);
     font-size: 15px;
     margin: 0px 5px;
     white-space: nowrap;
@@ -589,6 +597,7 @@ hr {
 /* Main advertisement */
 .advertisement {
     height: 325px;
+    width: 100%;
     border-radius: 15px;
 }
 
@@ -739,4 +748,30 @@ hr {
 #content-container {
     height: 90vh;
     overflow-y: scroll;
+}
+
+.mobile-advert-thumbnail {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.mobile-advert-button-one {
+    text-decoration: none;
+    width: 205px;
+    color: rgba(13, 143, 240, 1);
+    text-align: center;
+    border: 1px solid rgba(113, 113, 113, 1);
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.mobile-advert-button-two {
+    text-decoration: none;
+    background-color: rgba(13, 143, 240, 1);
+    width: 205px;
+    color: black;
+    text-align: center;
+    border: 2px solid rgba(13, 143, 240, 1);
+    border-radius: 20px;
+    padding: 5px;
 }
