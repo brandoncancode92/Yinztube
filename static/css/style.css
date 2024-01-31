@@ -751,6 +751,7 @@ hr {
 
 
 /* Mobile advertisement thumbnail */
+.mobile-video-thumbnail,
 .mobile-advert-thumbnail {
     width: 100%;
     margin-bottom: 10px;
