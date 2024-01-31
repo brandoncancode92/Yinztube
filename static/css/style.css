@@ -749,6 +749,7 @@ hr {
     overflow-y: scroll;
 }
 
+
 /* Mobile advertisement thumbnail */
 .mobile-advert-thumbnail {
     width: 100%;
@@ -789,3 +790,9 @@ hr {
     padding: 5px;
 }
 
+/* Hide all the mobile ad continers initially */
+#mobile-advert-one-container,
+#mobile-advert-two-container,
+#mobile-advert-three-container {
+    display: none;
+}

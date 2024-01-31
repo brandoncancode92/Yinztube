@@ -216,3 +216,34 @@ setInterval(showNextAd, 30000); // Change ads every 5 seconds
 // Initially show the first ad
 ads[0].classList.add('active');
 
+// Randomly show one of the mobile ad containers while hiding
+// the remaining two.
+const desiredContainers = [
+    document.getElementById('mobile-advert-one-container'),
+    document.getElementById('mobile-advert-two-container'),
+    document.getElementById('mobile-advert-three-container'),
+    ];
+
+function showRandomAd() {
+    // Check if all desired containers exist
+    if (desiredContainers.every(container => container)) {
+        // Cache elements for efficiency
+        const containerOne = desiredContainers[0];
+        const containerTwo = desiredContainers[1];
+        const containerThree = desiredContainers[2];
+
+        // Hide all desired containers (already hidden by CSS, but ensuring consistency)
+        containerOne.style.display = 'none';
+        containerTwo.style.display = 'none';
+        containerThree.style.display = 'none';
+
+        // Randomly select one container and make it visible
+        const randomIndex = Math.floor(Math.random() * desiredContainers.length);
+        desiredContainers[randomIndex].style.display = 'block';
+    } else {
+        console.warn('Some desired ad containers are missing!');
+    }
+}
+
+// Call the function to show a random ad on page load
+showRandomAd();
