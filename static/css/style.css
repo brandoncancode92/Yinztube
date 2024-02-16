@@ -320,16 +320,24 @@ hr {
 
 /* Hide these elements on larger screens */
 @media only screen and (min-width: 769px) {
+    /* Device cast icon */
     #cast-icon {
         display: none;
     }
+    /* Mobile Footer */
     #mobile-footer {
         display: none;
     }
+    /* Mobile sub-navbar */
     #mobile-sub-navbar {
         display: none;
     }
+    /* Mobile advertisements container */
     #mobile-advertisements {
+        display: none;
+    }
+    /* Mobile main video container */
+    #mobile-main-videos-container {
         display: none;
     }
 }
