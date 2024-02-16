@@ -765,6 +765,11 @@ hr {
     margin-bottom: 10px;
 }
 
+.mobile-video-thumbnail-dots {
+    height: 30px;
+    width: 20px;
+}
+
 /* Mobile advertisement button one */
 .mobile-advert-button-one {
     text-decoration: none;
