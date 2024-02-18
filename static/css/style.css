@@ -811,3 +811,14 @@ hr {
 #mobile-advert-three-container {
     display: none;
 }
+
+
+/* Clips */
+
+.main-clips {
+    border-radius: 15px;
+    height: 425px;
+    width: 150%;
+}
+
+/* End of clips */
