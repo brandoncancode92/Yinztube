@@ -815,10 +815,18 @@ hr {
 
 /* Clips */
 
+/* #main-clips-container {
+    overflow-x: hidden;
+} */
+
+.clip-div {
+    height: 425px;
+    width: 12.1vw;
+}
+
 .main-clips {
     border-radius: 15px;
-    height: 425px;
-    width: 150%;
+    width: 100%;
 }
 
 /* End of clips */
